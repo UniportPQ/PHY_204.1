@@ -1,0 +1,314 @@
+[
+  {
+    "type": "pageInfo",
+    "kind": "OBJ",
+    "course_title": "wave and vibration/optics",
+    "code": "PHY 204.1",
+    "session": "2024/2025",
+    "topics": ["Simple Harmonic Motion", "Oscillations", "SHM", "Damped Oscillations", "Light Damping", "Heavy Damping", "Oscillators", "Equations of Motion", "Differential Equations", "Electromagnetic Waves", "Properties", "Definition", "Superposition", "Beats", "Wave Motion", "Solutions", "Critical Damping", "Maximum Displacement", "Damping Conditions", "Underdamped", "Equation of Motion", "Period", "Forced Oscillations", "Velocity", "Acceleration", "Maxwell's Equations", "Electromagnetism", "Physics", "Poynting Vector", "Radiation Pressure"],
+    "time": "120"
+  },
+  
+  
+  {
+    "type": "Instruction",
+    "content": "Attempt All Questions"
+  },
+  
+
+  {
+    "type": "Question",
+    "name": "Question 1a",
+    "topic": [
+      "Simple Harmonic Motion",
+      "Oscillations",
+      "SHM"
+    ],
+    "Question": {
+      "content": "Discuss simple harmonic oscillations.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Simple harmonic oscillation is a type of periodic motion where the restoring force is directly proportional to the displacement from equilibrium and acts in the opposite direction. It follows F = -kx, leading to sinusoidal motion x(t) = A sin(ωt + φ) or x(t) = A cos(ωt + φ). The period is independent of amplitude (isochronous). Examples include mass-spring systems and simple pendulums for small angles."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Simple Harmonic Oscillations</h4>\n  \n  <p><strong>Definition:</strong> Simple harmonic oscillation (SHO) is a special type of periodic motion in which the restoring force is directly proportional to the displacement from equilibrium and acts in the direction opposite to the displacement.</p>\n  \n  <p><strong>Mathematical formulation:</strong></p>\n  <p style='text-align:center'>\\(F = -kx\\)</p>\n  <p>where \\(k\\) is a positive constant (force constant), and \\(x\\) is the displacement from equilibrium.</p>\n  \n  <p>Applying Newton's second law, \\(F = ma = m\\frac{d^2x}{dt^2}\\), we get:</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} = -kx\\)</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + \\frac{k}{m}x = 0\\)</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + \\omega^2 x = 0\\) where \\(\\omega = \\sqrt{\\frac{k}{m}}\\) is the angular frequency.</p>\n  \n  <p><strong>General solution:</strong></p>\n  <p style='text-align:center'>\\(x(t) = A \\sin(\\omega t + \\phi)\\) or \\(x(t) = A \\cos(\\omega t + \\phi)\\)</p>\n  <p>where:</p>\n  <ul>\n    <li>\\(A\\) is the amplitude (maximum displacement)</li>\n    <li>\\(\\omega\\) is the angular frequency (rad/s)</li>\n    <li>\\(\\phi\\) is the phase constant (depends on initial conditions)</li>\n  </ul>\n  \n  <p><strong>Key characteristics:</strong></p>\n  <ul>\n    <li><strong>Period:</strong> \\(T = \\frac{2\\pi}{\\omega} = 2\\pi\\sqrt{\\frac{m}{k}}\\) – independent of amplitude (isochronous)</li>\n    <li><strong>Frequency:</strong> \\(f = \\frac{1}{T} = \\frac{1}{2\\pi}\\sqrt{\\frac{k}{m}}\\)</li>\n    <li><strong>Velocity:</strong> \\(v(t) = \\frac{dx}{dt} = A\\omega \\cos(\\omega t + \\phi)\\)</li>\n    <li><strong>Acceleration:</strong> \\(a(t) = \\frac{d^2x}{dt^2} = -A\\omega^2 \\sin(\\omega t + \\phi) = -\\omega^2 x(t)\\)</li>\n    <li><strong>Energy:</strong> Total mechanical energy \\(E = \\frac{1}{2}kA^2 = \\frac{1}{2}m\\omega^2 A^2\\) is constant. Energy continuously exchanges between kinetic and potential forms.</li>\n  </ul>\n  \n  <p><strong>Examples:</strong></p>\n  <ul>\n    <li>Mass attached to a spring (horizontal or vertical)</li>\n    <li>Simple pendulum for small angles (\\(\\omega = \\sqrt{g/L}\\))</li>\n    <li>Torsional pendulum</li>\n    <li>LC circuits (electrical analog)</li>\n  </ul>\n  \n  <p><strong>Graphical representation:</strong> Displacement vs. time is a sine or cosine wave. Velocity leads displacement by 90°, acceleration is 180° out of phase with displacement.</p>\n  \n  <p>Simple harmonic motion is the foundation for understanding more complex oscillatory phenomena like damped, forced, and coupled oscillations.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1b",
+    "topic": [
+      "Damped Oscillations",
+      "Light Damping",
+      "Heavy Damping"
+    ],
+    "Question": {
+      "content": "State the condition for a light and heavy damped oscillator.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "For a damped oscillator with equation m d²x/dt² + b dx/dt + kx = 0, defining γ = b/(2m) and ω₀² = k/m: Light damping (underdamped) occurs when γ < ω₀, giving oscillatory motion with exponentially decaying amplitude. Heavy damping (overdamped) occurs when γ > ω₀, giving non-oscillatory exponential decay back to equilibrium."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Conditions for Light and Heavy Damping</h4>\n  \n  <p><strong>Damped oscillator equation:</strong></p>\n  <p>For a damped harmonic oscillator with damping force proportional to velocity, the equation of motion is:</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} + b\\frac{dx}{dt} + kx = 0\\)</p>\n  \n  <p>where:</p>\n  <ul>\n    <li>\\(m\\) = mass</li>\n    <li>\\(b\\) = damping coefficient</li>\n    <li>\\(k\\) = spring constant</li>\n  </ul>\n  \n  <p><strong>Standard form:</strong> Divide by m:</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + 2\\gamma\\frac{dx}{dt} + \\omega_0^2 x = 0\\)</p>\n  \n  <p>where:</p>\n  <ul>\n    <li>\\(\\gamma = \\frac{b}{2m}\\) = damping constant (decay rate)</li>\n    <li>\\(\\omega_0 = \\sqrt{\\frac{k}{m}}\\) = natural angular frequency (undamped)</li>\n  </ul>\n  \n  <p><strong>Characteristic equation:</strong> \\(r^2 + 2\\gamma r + \\omega_0^2 = 0\\)</p>\n  <p>Roots: \\(r = -\\gamma \\pm \\sqrt{\\gamma^2 - \\omega_0^2}\\)</p>\n  \n  <p><strong>Light damping (underdamped) condition:</strong></p>\n  <p style='text-align:center'>\\(\\gamma < \\omega_0\\)  or  \\(b < 2\\sqrt{mk}\\)</p>\n  <ul>\n    <li>The discriminant \\(\\gamma^2 - \\omega_0^2 < 0\\), so roots are complex conjugates.</li>\n    <li>Solution: \\(x(t) = A e^{-\\gamma t} \\cos(\\omega_d t + \\phi)\\) where \\(\\omega_d = \\sqrt{\\omega_0^2 - \\gamma^2}\\)</li>\n    <li>The system oscillates with exponentially decaying amplitude.</li>\n    <li>Example: A pendulum in air, swinging with gradually decreasing amplitude.</li>\n  </ul>\n  \n  <p><strong>Heavy damping (overdamped) condition:</strong></p>\n  <p style='text-align:center'>\\(\\gamma > \\omega_0\\)  or  \\(b > 2\\sqrt{mk}\\)</p>\n  <ul>\n    <li>The discriminant \\(\\gamma^2 - \\omega_0^2 > 0\\), so roots are real and distinct (both negative).</li>\n    <li>Solution: \\(x(t) = Ae^{-\\alpha_1 t} + Be^{-\\alpha_2 t}\\) where \\(\\alpha_1, \\alpha_2 > 0\\)</li>\n    <li>The system returns to equilibrium without oscillating, but more slowly than critical damping.</li>\n    <li>Example: A pendulum in a thick viscous fluid (like honey).</li>\n  </ul>\n  \n  <p><strong>Critical damping condition (boundary):</strong> \\(\\gamma = \\omega_0\\) or \\(b = 2\\sqrt{mk}\\)</p>\n  <ul>\n    <li>System returns to equilibrium fastest without oscillating.</li>\n    <li>Example: Properly designed shock absorbers in cars.</li>\n  </ul>\n  \n  <p><strong>Summary table:</strong></p>\n  <table style=\"width:100%; border-collapse: collapse; margin-top:10px;\">\n    <tr style=\"background: var(--strongColor); color: white;\">\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Damping type</th>\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Condition</th>\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Behavior</th>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Light (Underdamped)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\gamma < \\omega_0\\)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Oscillates with decaying amplitude</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Critical</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\gamma = \\omega_0\\)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Fastest return without oscillation</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Heavy (Overdamped)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\gamma > \\omega_0\\)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Slow, non-oscillatory return</td>\n    </tr>\n  </table>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1c",
+    "topic": [
+      "Oscillators",
+      "Equations of Motion",
+      "Differential Equations"
+    ],
+    "Question": {
+      "content": "Write down model equations of motion to describe the motion of the following types of oscillators: free undamped; free damped; forced undamped; forced damped.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Free undamped: d²x/dt² + ω₀²x = 0\nFree damped: d²x/dt² + 2γ dx/dt + ω₀²x = 0\nForced undamped: d²x/dt² + ω₀²x = F₀ cos(ωt)/m\nForced damped: d²x/dt² + 2γ dx/dt + ω₀²x = F₀ cos(ωt)/m"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Equations of Motion for Different Oscillator Types</h4>\n  \n  <p><strong>Common parameters:</strong></p>\n  <ul>\n    <li>\\(m\\) = mass</li>\n    <li>\\(k\\) = spring constant</li>\n    <li>\\(b\\) = damping coefficient</li>\n    <li>\\(\\omega_0 = \\sqrt{k/m}\\) = natural frequency</li>\n    <li>\\(\\gamma = b/(2m)\\) = damping constant</li>\n    <li>\\(F_0\\) = amplitude of driving force</li>\n    <li>\\(\\omega\\) = driving frequency</li>\n  </ul>\n  \n  <p><strong>1. Free undamped oscillator:</strong></p>\n  <p>No driving force, no damping. The only force is the restoring force \\(-kx\\).</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} = -kx\\)</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + \\omega_0^2 x = 0\\)</p>\n  <p>where \\(\\omega_0^2 = k/m\\).</p>\n  \n  <p><strong>2. Free damped oscillator:</strong></p>\n  <p>No driving force, but damping force \\(-b\\frac{dx}{dt}\\) is present.</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} = -kx - b\\frac{dx}{dt}\\)</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} + b\\frac{dx}{dt} + kx = 0\\)</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + 2\\gamma\\frac{dx}{dt} + \\omega_0^2 x = 0\\)</p>\n  <p>where \\(\\gamma = b/(2m)\\).</p>\n  \n  <p><strong>3. Forced undamped oscillator:</strong></p>\n  <p>An external driving force \\(F(t) = F_0 \\cos(\\omega t)\\) is applied, but no damping.</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} = -kx + F_0 \\cos(\\omega t)\\)</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + \\omega_0^2 x = \\frac{F_0}{m} \\cos(\\omega t)\\)</p>\n  \n  <p><strong>4. Forced damped oscillator:</strong></p>\n  <p>Both driving force and damping are present.</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} = -kx - b\\frac{dx}{dt} + F_0 \\cos(\\omega t)\\)</p>\n  <p style='text-align:center'>\\(m\\frac{d^2x}{dt^2} + b\\frac{dx}{dt} + kx = F_0 \\cos(\\omega t)\\)</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + 2\\gamma\\frac{dx}{dt} + \\omega_0^2 x = \\frac{F_0}{m} \\cos(\\omega t)\\)</p>\n  \n  <p><strong>Summary table:</strong></p>\n  <table style=\"width:100%; border-collapse: collapse; margin-top:10px;\">\n    <tr style=\"background: var(--strongColor); color: white;\">\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Oscillator type</th>\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Equation of motion</th>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Free undamped</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\ddot{x} + \\omega_0^2 x = 0\\)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Free damped</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\ddot{x} + 2\\gamma\\dot{x} + \\omega_0^2 x = 0\\)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Forced undamped</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\ddot{x} + \\omega_0^2 x = (F_0/m) \\cos(\\omega t)\\)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Forced damped</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\ddot{x} + 2\\gamma\\dot{x} + \\omega_0^2 x = (F_0/m) \\cos(\\omega t)\\)</td>\n    </tr>\n  </table>\n  \n  <p>Note: \\(\\ddot{x}\\) denotes \\(d^2x/dt^2\\) and \\(\\dot{x}\\) denotes \\(dx/dt\\).</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1d",
+    "topic": [
+      "Electromagnetic Waves",
+      "Properties",
+      "Definition"
+    ],
+    "Question": {
+      "content": "Define electromagnetic waves and state 4 properties of electromagnetic waves.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Electromagnetic waves are transverse waves consisting of oscillating electric and magnetic fields perpendicular to each other and to the direction of propagation, traveling at the speed of light. Four properties: (1) They travel at speed c = 3×10⁸ m/s in vacuum. (2) They do not require a medium. (3) They are transverse waves. (4) They carry energy and momentum."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Electromagnetic Waves: Definition and Properties</h4>\n  \n  <p><strong>Definition:</strong></p>\n  <p>Electromagnetic (EM) waves are waves that are created by oscillating electric and magnetic fields. They consist of mutually perpendicular electric field (\\(\\vec{E}\\)) and magnetic field (\\(\\vec{B}\\)) oscillations that are perpendicular to the direction of wave propagation. EM waves are self-propagating and do not require a material medium.</p>\n  \n  <p>Mathematically, for a plane EM wave traveling in the z-direction:</p>\n  <p style='text-align:center'>\\(\\vec{E} = E_0 \\cos(kz - \\omega t) \\hat{i}\\)</p>\n  <p style='text-align:center'>\\(\\vec{B} = B_0 \\cos(kz - \\omega t) \\hat{j}\\)</p>\n  <p>with \\(E_0/B_0 = c\\) and \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\).</p>\n  \n  <p><strong>Four important properties of electromagnetic waves:</strong></p>\n  \n  <ol>\n    <li><strong>Speed:</strong> All EM waves travel at the same speed in vacuum, \\(c = 3 \\times 10^8 \\; \\text{m/s}\\). This speed is given by \\(c = \\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}}\\).</li>\n    \n    <li><strong>No medium required:</strong> Unlike mechanical waves (sound, water waves), EM waves can propagate through vacuum. They are self-sustaining through mutual induction: a changing electric field generates a magnetic field, and vice versa.</li>\n    \n    <li><strong>Transverse nature:</strong> The oscillations of \\(\\vec{E}\\) and \\(\\vec{B}\\) are perpendicular to each other and both are perpendicular to the direction of wave propagation. This means EM waves are transverse waves.</li>\n    \n    <li><strong>Energy and momentum transport:</strong> EM waves carry energy (described by the Poynting vector \\(\\vec{S} = \\frac{1}{\\mu_0} \\vec{E} \\times \\vec{B}\\)) and momentum (exerting radiation pressure on surfaces).</li>\n  </ol>\n  \n  <p><strong>Additional properties (can be used if needed):</strong></p>\n  <ul>\n    <li><strong>Reflection, refraction, diffraction, interference:</strong> EM waves exhibit all wave phenomena.</li>\n    <li><strong>Polarization:</strong> Since they are transverse, EM waves can be polarized.</li>\n    <li><strong>Inverse square law:</strong> Intensity decreases with distance squared from a point source.</li>\n    <li><strong>Relationship between E and B:</strong> In vacuum, \\(E = cB\\).</li>\n    <li><strong>Spectrum:</strong> EM waves span a wide range of frequencies and wavelengths (radio to gamma rays).</li>\n  </ul>\n  \n  <p><strong>Examples:</strong> Radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2a",
+    "topic": [
+      "Superposition",
+      "Beats",
+      "Wave Motion"
+    ],
+    "Question": {
+      "content": "Two vibrations of different frequencies are given by p₁ = a sin(ω₁t), p₂ = a sin(ω₂t). Find the superposition for the two harmonic displacements when ω₂ > ω₁ and discuss their motion.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The superposition is p = p₁ + p₂ = a sin(ω₁t) + a sin(ω₂t) = 2a cos((ω₂-ω₁)t/2) sin((ω₁+ω₂)t/2). This represents a beat pattern: a rapid oscillation at the average frequency (ω₁+ω₂)/2 with an amplitude modulated slowly at the difference frequency (ω₂-ω₁)/2. The beat frequency is |ω₂-ω₁|."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Superposition of Two Waves with Different Frequencies (Equal Amplitudes)</h4>\n  \n  <p><strong>Given:</strong></p>\n  <p>\\(p_1 = a \\sin(\\omega_1 t)\\)</p>\n  <p>\\(p_2 = a \\sin(\\omega_2 t)\\)</p>\n  <p>with \\(\\omega_2 > \\omega_1\\).</p>\n  \n  <p><strong>Step 1: Apply the sum-to-product trigonometric identity</strong></p>\n  <p>For any two angles A and B:</p>\n  <p style='text-align:center'>\\(\\sin A + \\sin B = 2 \\sin\\left(\\frac{A+B}{2}\\right) \\cos\\left(\\frac{A-B}{2}\\right)\\)</p>\n  \n  <p>Here, \\(A = \\omega_1 t\\) and \\(B = \\omega_2 t\\).</p>\n  \n  <p><strong>Step 2: Apply the identity</strong></p>\n  <p>\\(p(t) = p_1 + p_2 = a[\\sin(\\omega_1 t) + \\sin(\\omega_2 t)]\\)</p>\n  <p>\\(p(t) = a \\times 2 \\sin\\left(\\frac{\\omega_1 t + \\omega_2 t}{2}\\right) \\cos\\left(\\frac{\\omega_1 t - \\omega_2 t}{2}\\right)\\)</p>\n  <p>\\(p(t) = 2a \\sin\\left(\\frac{\\omega_1 + \\omega_2}{2} t\\right) \\cos\\left(\\frac{\\omega_1 - \\omega_2}{2} t\\right)\\)</p>\n  \n  <p>Since \\(\\cos(-\\theta) = \\cos \\theta\\), and noting that \\(\\omega_2 > \\omega_1\\), we can write:</p>\n  <p style='text-align:center'>\\(p(t) = 2a \\sin(\\omega_{\\text{avg}} t) \\cos(\\Delta\\omega \\, t)\\)</p>\n  \n  <p>where:</p>\n  <ul>\n    <li>\\(\\omega_{\\text{avg}} = \\frac{\\omega_1 + \\omega_2}{2}\\) is the average frequency</li>\n    <li>\\(\\Delta\\omega = \\frac{\\omega_2 - \\omega_1}{2}\\) is half the difference frequency</li>\n  </ul>\n  \n  <p><strong>Step 3: Interpretation as a beat pattern</strong></p>\n  \n  <p>The expression \\(p(t) = [2a \\cos(\\Delta\\omega \\, t)] \\sin(\\omega_{\\text{avg}} t)\\) represents:</p>\n  \n  <ul>\n    <li>A rapid oscillation at the average frequency \\(\\omega_{\\text{avg}}\\) (the carrier frequency)</li>\n    <li>An amplitude envelope \\(2a |\\cos(\\Delta\\omega \\, t)|\\) that varies slowly with time</li>\n  </ul>\n  \n  <p>This is the <strong>beat phenomenon</strong>.</p>\n  \n  <p><strong>Step 4: Beat frequency and period</strong></p>\n  \n  <ul>\n    <li>The amplitude goes through a complete cycle (from maximum to maximum) when \\(\\cos(\\Delta\\omega \\, t)\\) goes through one full cycle.</li>\n    <li>\\(\\cos(\\Delta\\omega \\, t)\\) completes one cycle when \\(\\Delta\\omega \\, t = \\pi\\), i.e., when \\(t = \\pi/\\Delta\\omega\\).</li>\n    <li>But careful: The amplitude envelope is \\(|\\cos(\\Delta\\omega \\, t)|\\), so it repeats every time \\(\\Delta\\omega \\, t\\) increases by \\(\\pi\\), not \\(2\\pi\\).</li>\n    <li>The time between consecutive maxima (loudest points) is \\(T_{\\text{beat}} = \\frac{\\pi}{\\Delta\\omega} = \\frac{2\\pi}{\\omega_2 - \\omega_1}\\).</li>\n    <li>Therefore, the <strong>beat frequency</strong> (the rate at which loudness maxima occur) is:</li>\n  </ul>\n  \n  <p style='text-align:center'>\\(f_{\\text{beat}} = \\frac{1}{T_{\\text{beat}}} = \\frac{\\omega_2 - \\omega_1}{2\\pi} = |f_2 - f_1|\\)</p>\n  \n  <p>The beat frequency equals the difference between the two original frequencies.</p>\n  \n  <p><strong>Step 5: Discussion of motion</strong></p>\n  \n  <ul>\n    <li>The resulting motion is not simple harmonic because the amplitude is not constant.</li>\n    <li>The displacement oscillates rapidly at the average frequency, but the amplitude slowly increases and decreases.</li>\n    <li>When \\(\\cos(\\Delta\\omega \\, t) = \\pm 1\\), the amplitude is maximum (\\(2a\\)) – constructive interference.</li>\n    <li>When \\(\\cos(\\Delta\\omega \\, t) = 0\\), the amplitude is zero – destructive interference.</li>\n    <li>This pattern repeats with period \\(T_{\\text{beat}}\\).</li>\n    <li>This phenomenon is easily heard when two musical notes of slightly different frequencies are played together – you hear a single note whose loudness fluctuates (beats).</li>\n  </ul>\n  \n  <p><strong>Step 6: Graphical interpretation</strong></p>\n  \n  <p>If you plot p(t) versus time, you will see:</p>\n  <ul>\n    <li>A sine wave with frequency \\(\\omega_{\\text{avg}}\\)</li>\n    <li>The amplitude of this sine wave is modulated by a cosine envelope of frequency \\(\\Delta\\omega\\)</li>\n    <li>The envelope goes to zero at regular intervals, creating a pulsating sound or vibration.</li>\n  </ul>\n  \n  <p><strong>Step 7: Special cases</strong></p>\n  \n  <ul>\n    <li>If \\(\\omega_1\\) and \\(\\omega_2\\) are very close, \\(\\Delta\\omega\\) is small, so the beats are slow and easily noticeable.</li>\n    <li>If \\(\\omega_1\\) and \\(\\omega_2\\) are far apart, the beats are too rapid to perceive, and we hear two separate frequencies.</li>\n    <li>If the amplitudes were different (as in the previous version of this question), the cancellation would not be complete, and the minimum amplitude would be \\(|a_1 - a_2|\\).</li>\n  </ul>\n  \n  <p><strong>Conclusion:</strong> The superposition of two equal-amplitude sine waves with different frequencies produces a beat pattern with frequency equal to the difference of the original frequencies.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2b",
+    "topic": [
+      "Simple Harmonic Motion",
+      "Solutions",
+      "Differential Equations"
+    ],
+    "Question": {
+      "content": "Show that x(t) = a sin(ωt + δ) and ẋ(t) = a cos(ωt + δ) are the solution for the harmonic system: \\(\\ddot{x}(t) + \\omega^2 x(t) = 0\\)",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "For x = a sin(ωt + δ), we get ẋ = aω cos(ωt + δ) and ẍ = -aω² sin(ωt + δ) = -ω²x, so ẍ + ω²x = 0. The given ẋ(t) expression is missing the factor ω, so it is not correct as written. The correct velocity is ẋ(t) = aω cos(ωt + δ)."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Verifying Solutions for Harmonic Oscillator</h4>\n  \n  <p><strong>The harmonic oscillator equation:</strong></p>\n  <p style='text-align:center'>\\(\\ddot{x}(t) + \\omega^2 x(t) = 0\\)</p>\n  \n  <p><strong>Step 1: Check the proposed solution for x(t)</strong></p>\n  <p>Given: \\(x(t) = a \\sin(\\omega t + \\delta)\\)</p>\n  \n  <p>First derivative (velocity):</p>\n  <p>\\(\\dot{x}(t) = \\frac{d}{dt}[a \\sin(\\omega t + \\delta)] = a \\omega \\cos(\\omega t + \\delta)\\)</p>\n  \n  <p>Second derivative (acceleration):</p>\n  <p>\\(\\ddot{x}(t) = \\frac{d}{dt}[a \\omega \\cos(\\omega t + \\delta)] = a \\omega [-\\omega \\sin(\\omega t + \\delta)] = -a \\omega^2 \\sin(\\omega t + \\delta)\\)</p>\n  \n  <p>But note that \\(a \\sin(\\omega t + \\delta) = x(t)\\), so:</p>\n  <p>\\(\\ddot{x}(t) = -\\omega^2 x(t)\\)</p>\n  \n  <p>Substituting into the left side of the harmonic oscillator equation:</p>\n  <p>\\(\\ddot{x}(t) + \\omega^2 x(t) = (-\\omega^2 x(t)) + \\omega^2 x(t) = 0\\)</p>\n  \n  <p>Thus, \\(x(t) = a \\sin(\\omega t + \\delta)\\) is indeed a solution.</p>\n  \n  <p><strong>Step 2: Check the proposed expression for ẋ(t)</strong></p>\n  <p>The problem states: \"ẋ(t) = a cos(ωt + δ)\"</p>\n  \n  <p>From our calculation above, the actual velocity is:</p>\n  <p>\\(\\dot{x}(t) = a \\omega \\cos(\\omega t + \\delta)\\)</p>\n  \n  <p>The given expression \\(\\dot{x}(t) = a \\cos(\\omega t + \\delta)\\) is missing the factor \\(\\omega\\). This would only be correct if \\(\\omega = 1\\), which is not generally true.</p>\n  \n  <p>Therefore, the statement as written contains an error. The correct pair should be:</p>\n  <p>\\(x(t) = a \\sin(\\omega t + \\delta)\\)</p>\n  <p>\\(\\dot{x}(t) = a \\omega \\cos(\\omega t + \\delta)\\)</p>\n  \n  <p><strong>Step 3: Verify that the correct ẋ(t) also satisfies the equation indirectly</strong></p>\n  <p>If we differentiate the correct ẋ(t), we get back to ẍ = -ω²x, which we already verified satisfies the equation.</p>\n  \n  <p><strong>Step 4: Alternative form using cosine</strong></p>\n  <p>Note that \\(x(t) = a \\cos(\\omega t + \\delta)\\) is also a solution, with velocity \\(\\dot{x}(t) = -a \\omega \\sin(\\omega t + \\delta)\\). The general solution is a linear combination of sine and cosine.</p>\n  \n  <p><strong>Conclusion:</strong> The given \\(x(t)\\) is correct, but the given \\(ẋ(t)\\) is missing the factor \\(\\omega\\). The correct expressions that satisfy the harmonic oscillator equation are:</p>\n  \n  <p style='text-align:center'>\\(x(t) = a \\sin(\\omega t + \\delta)\\)</p>\n  <p style='text-align:center'>\\(\\dot{x}(t) = a \\omega \\cos(\\omega t + \\delta)\\)</p>\n  \n  <p>and these are consistent with the differential equation.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3a",
+    "topic": [
+      "Damped Oscillations",
+      "Critical Damping",
+      "Maximum Displacement"
+    ],
+    "Question": {
+      "content": "The displacement for a mechanical damped oscillator that experiences sudden impulse and are required to return to zero displacement in minimum time is given by x = (A + Bt)e^{-Pt}, where P = r/(2m). Calculate its maximum displacement.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The maximum displacement occurs at t = 1/P - A/B, provided this time is positive. The maximum value is x_max = (B/P) e^{-(1 - AP/B)}. If the initial conditions are x(0) = A and ẋ(0) = B - AP, then for the critically damped case with A = x₀ and B = x₀P + v₀, the maximum can be found by setting dx/dt = 0."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Maximum Displacement for Critically Damped Oscillator</h4>\n  \n  <p><strong>Given:</strong></p>\n  <p>\\(x(t) = (A + Bt)e^{-Pt}\\), where \\(P = \\frac{r}{2m}\\) (damping constant).</p>\n  \n  <p>This is the solution for a <strong>critically damped oscillator</strong> (the case that returns to zero in minimum time without oscillating).</p>\n  \n  <p><strong>Step 1: Find the time at which maximum displacement occurs</strong></p>\n  <p>Maximum displacement occurs when the velocity is zero: \\(\\frac{dx}{dt} = 0\\).</p>\n  \n  <p>Compute the derivative using product rule:</p>\n  <p>\\(\\frac{dx}{dt} = \\frac{d}{dt}[(A + Bt)e^{-Pt}] = B e^{-Pt} + (A + Bt)(-P e^{-Pt})\\)</p>\n  <p>\\(\\frac{dx}{dt} = e^{-Pt}[B - P(A + Bt)] = e^{-Pt}[B - PA - PBt]\\)</p>\n  \n  <p>Set \\(\\frac{dx}{dt} = 0\\):</p>\n  <p>\\(e^{-Pt}[B - PA - PBt] = 0\\)</p>\n  <p>Since \\(e^{-Pt} > 0\\) for all finite t, we have:</p>\n  <p>\\(B - PA - PBt = 0\\)</p>\n  <p>\\(PBt = B - PA\\)</p>\n  <p>\\(t_{\\text{max}} = \\frac{B - PA}{PB} = \\frac{1}{P} - \\frac{A}{B}\\)</p>\n  \n  <p>This time must be positive for a maximum to occur after t=0.</p>\n  \n  <p><strong>Step 2: Calculate the maximum displacement</strong></p>\n  <p>Substitute \\(t = t_{\\text{max}}\\) into \\(x(t)\\):</p>\n  \n  <p>\\(x_{\\text{max}} = (A + B t_{\\text{max}}) e^{-P t_{\\text{max}}}\\)</p>\n  \n  <p>First compute \\(A + B t_{\\text{max}}\\):</p>\n  <p>\\(A + B\\left(\\frac{1}{P} - \\frac{A}{B}\\right) = A + \\frac{B}{P} - A = \\frac{B}{P}\\)</p>\n  \n  <p>Now compute \\(e^{-P t_{\\text{max}}}\\):</p>\n  <p>\\(-P t_{\\text{max}} = -P\\left(\\frac{1}{P} - \\frac{A}{B}\\right) = -1 + \\frac{PA}{B}\\)</p>\n  <p>\\(e^{-P t_{\\text{max}}} = e^{-1 + PA/B} = e^{-1} e^{PA/B}\\)</p>\n  \n  <p>Therefore:</p>\n  <p>\\(x_{\\text{max}} = \\frac{B}{P} \\cdot e^{-1} e^{PA/B} = \\frac{B}{P} e^{(PA/B) - 1}\\)</p>\n  \n  <p><strong>Step 3: Express in terms of initial conditions (optional)</strong></p>\n  <p>For a critically damped oscillator, the constants A and B are determined by initial conditions:</p>\n  <p>At t = 0: \\(x(0) = A\\) (initial displacement)</p>\n  <p>\\(\\dot{x}(0) = B - PA\\) (initial velocity)</p>\n  \n  <p>So \\(B = \\dot{x}(0) + PA\\).</p>\n  \n  <p>Substituting this into the expression for \\(x_{\\text{max}}\\) gives the maximum displacement in terms of initial conditions, but the expression becomes messy.</p>\n  \n  <p><strong>Step 4: Special case - released from rest with initial displacement</strong></p>\n  <p>If the oscillator is released from rest (\\(\\dot{x}(0) = 0\\)) with initial displacement \\(x_0\\), then:</p>\n  <p>\\(A = x_0\\), and \\(B = P x_0\\) (since \\(\\dot{x}(0) = B - P x_0 = 0 \\Rightarrow B = P x_0\\))</p>\n  \n  <p>Then \\(t_{\\text{max}} = \\frac{1}{P} - \\frac{x_0}{P x_0} = \\frac{1}{P} - \\frac{1}{P} = 0\\)</p>\n  \n  <p>This means the maximum displacement occurs at t=0 (the initial displacement itself), and there is no overshoot. This makes sense for a critically damped oscillator released from rest – it simply decays without ever exceeding the initial displacement.</p>\n  \n  <p><strong>Step 5: General conclusion</strong></p>\n  <p>The maximum displacement is given by:</p>\n  \n  <p style='text-align:center'>\\(x_{\\text{max}} = \\frac{B}{P} e^{(PA/B) - 1}\\)</p>\n  \n  <p>provided that \\(t_{\\text{max}} = \\frac{1}{P} - \\frac{A}{B} > 0\\).</p>\n  \n  <p>If \\(t_{\\text{max}} \\leq 0\\), then the maximum displacement occurs at t = 0 and equals \\(x(0) = A\\).</p>\n  \n  <p><strong>Note:</strong> The problem asks to \"calculate its maximum displacement\" without giving specific values for A, B, and P. The answer is the expression derived above. If numerical values were provided, we would substitute them.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3b(i)",
+    "topic": [
+      "Damped Oscillations",
+      "Damping Conditions",
+      "Critical Damping"
+    ],
+    "Question": {
+      "content": "Explain the condition 'bracket positive' in a mechanically damped oscillating system.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "'Bracket positive' refers to the discriminant (γ² - ω₀²) being positive, which corresponds to overdamped motion. In this case, the damping coefficient γ > ω₀, the system returns to equilibrium without oscillating, and the displacement decays exponentially as a sum of two real exponentials."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Bracket Positive Condition (Overdamped)</h4>\n  \n  <p><strong>Context:</strong> In a damped harmonic oscillator, the equation of motion is:</p>\n  <p style='text-align:center'>\\(\\ddot{x} + 2\\gamma\\dot{x} + \\omega_0^2 x = 0\\)</p>\n  <p>where \\(\\gamma = \\frac{b}{2m}\\) is the damping constant and \\(\\omega_0 = \\sqrt{\\frac{k}{m}}\\) is the natural frequency.</p>\n  \n  <p>The characteristic equation is:</p>\n  <p style='text-align:center'>\\(r^2 + 2\\gamma r + \\omega_0^2 = 0\\)</p>\n  \n  <p>The discriminant (the expression inside the square root when solving the quadratic) is:</p>\n  <p style='text-align:center'>\\(\\Delta = (2\\gamma)^2 - 4\\omega_0^2 = 4(\\gamma^2 - \\omega_0^2)\\)</p>\n  \n  <p>The term inside the parentheses, \\(\\gamma^2 - \\omega_0^2\\), is what determines the nature of the motion. This is likely what the question refers to as the \"bracket\".</p>\n  \n  <p><strong>Bracket positive condition: \\(\\gamma^2 - \\omega_0^2 > 0\\) or \\(\\gamma > \\omega_0\\)</strong></p>\n  \n  <ul>\n    <li><strong>Physical meaning:</strong> The damping is stronger than the critical damping value.</li>\n    <li><strong>Roots of characteristic equation:</strong> Two distinct real negative roots: \\(r_{1,2} = -\\gamma \\pm \\sqrt{\\gamma^2 - \\omega_0^2}\\)</li>\n    <li><strong>General solution:</strong> \\(x(t) = Ae^{r_1 t} + Be^{r_2 t}\\), where both exponents are negative.</li>\n    <li><strong>Motion:</strong> The system returns to equilibrium without oscillating (aperiodic decay). It approaches zero more slowly than critical damping.</li>\n    <li><strong>Analogy:</strong> Like a pendulum in a very thick fluid (e.g., honey) – it slowly creeps back to center without swinging past it.</li>\n    <li><strong>Energy:</strong> Energy is dissipated quickly but the return to equilibrium is sluggish.</li>\n  </ul>\n  \n  <p><strong>Summary:</strong> Bracket positive = overdamped = no oscillation, slow return to equilibrium.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3b(ii)",
+    "topic": [
+      "Damped Oscillations",
+      "Critical Damping",
+      "Damping Conditions"
+    ],
+    "Question": {
+      "content": "Explain the condition 'bracket zero' in a mechanically damped oscillating system.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "'Bracket zero' refers to the discriminant (γ² - ω₀²) being zero, which corresponds to critical damping. In this case, γ = ω₀, and the system returns to equilibrium in the shortest possible time without oscillating. The displacement follows x(t) = (A + Bt)e^{-γt}."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Bracket Zero Condition (Critically Damped)</h4>\n  \n  <p><strong>Context:</strong> In a damped harmonic oscillator, the equation of motion is:</p>\n  <p style='text-align:center'>\\(\\ddot{x} + 2\\gamma\\dot{x} + \\omega_0^2 x = 0\\)</p>\n  \n  <p>The discriminant (the expression inside the square root) is proportional to \\(\\gamma^2 - \\omega_0^2\\). This is the \"bracket\" referred to in the question.</p>\n  \n  <p><strong>Bracket zero condition: \\(\\gamma^2 - \\omega_0^2 = 0\\) or \\(\\gamma = \\omega_0\\)</strong></p>\n  \n  <ul>\n    <li><strong>Physical meaning:</strong> The damping is exactly at the critical value. This is the boundary between underdamped and overdamped motion.</li>\n    <li><strong>Roots of characteristic equation:</strong> A single repeated real negative root: \\(r = -\\gamma\\) (double root).</li>\n    <li><strong>General solution:</strong> \\(x(t) = (A + Bt)e^{-\\gamma t}\\)</li>\n    <li><strong>Motion:</strong> The system returns to equilibrium in the shortest possible time without oscillating. It may cross equilibrium at most once (depending on initial conditions) but does not oscillate.</li>\n    <li><strong>Optimal damping:</strong> This is the desired behavior for many practical applications like shock absorbers, door closers, and meter needles – they return to zero quickly without overshoot or oscillation.</li>\n    <li><strong>Example:</strong> A well-designed car suspension system is close to critically damped to provide a smooth ride without bouncing.</li>\n  </ul>\n  \n  <p><strong>Summary:</strong> Bracket zero = critically damped = fastest return to equilibrium without oscillation.</p>\n  \n  <p><strong>Comparison:</strong></p>\n  <ul>\n    <li>Underdamped (bracket negative): oscillates with decaying amplitude</li>\n    <li>Critically damped (bracket zero): fastest return without oscillation</li>\n    <li>Overdamped (bracket positive): slow return without oscillation</li>\n  </ul>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3b(iii)",
+    "topic": [
+      "Damped Oscillations",
+      "Underdamped",
+      "Damping Conditions"
+    ],
+    "Question": {
+      "content": "Explain the condition 'bracket negative' in a mechanically damped oscillating system.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "'Bracket negative' refers to the discriminant (γ² - ω₀²) being negative, which corresponds to underdamped motion. In this case, γ < ω₀, and the system oscillates with exponentially decaying amplitude. The displacement follows x(t) = Ae^{-γt} cos(ω_d t + φ), where ω_d = √(ω₀² - γ²)."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Bracket Negative Condition (Underdamped)</h4>\n  \n  <p><strong>Context:</strong> In a damped harmonic oscillator, the equation of motion is:</p>\n  <p style='text-align:center'>\\(\\ddot{x} + 2\\gamma\\dot{x} + \\omega_0^2 x = 0\\)</p>\n  \n  <p>The discriminant (the expression inside the square root) is proportional to \\(\\gamma^2 - \\omega_0^2\\). This is the \"bracket\" referred to in the question.</p>\n  \n  <p><strong>Bracket negative condition: \\(\\gamma^2 - \\omega_0^2 < 0\\) or \\(\\gamma < \\omega_0\\)</strong></p>\n  \n  <ul>\n    <li><strong>Physical meaning:</strong> The damping is less than the critical damping value. This is the most common type of damping in lightly damped systems.</li>\n    <li><strong>Roots of characteristic equation:</strong> Complex conjugate roots: \\(r = -\\gamma \\pm i\\omega_d\\), where \\(\\omega_d = \\sqrt{\\omega_0^2 - \\gamma^2}\\) is the damped angular frequency.</li>\n    <li><strong>General solution:</strong> \\(x(t) = Ae^{-\\gamma t} \\cos(\\omega_d t + \\phi)\\) or equivalently \\(x(t) = e^{-\\gamma t}[C \\cos(\\omega_d t) + D \\sin(\\omega_d t)]\\)</li>\n    <li><strong>Motion:</strong> The system oscillates with frequency \\(\\omega_d\\) (slightly less than the natural frequency \\(\\omega_0\\)), and the amplitude decays exponentially as \\(e^{-\\gamma t}\\).</li>\n    <li><strong>Examples:</strong> A pendulum swinging in air, a guitar string after being plucked, a mass on a spring with light friction.</li>\n    <li><strong>Energy:</strong> Energy is gradually dissipated over many cycles.</li>\n  </ul>\n  \n  <p><strong>Key characteristics:</strong></p>\n  <ul>\n    <li>The system crosses the equilibrium position multiple times.</li>\n    <li>The period of damped oscillation is \\(T_d = \\frac{2\\pi}{\\omega_d} = \\frac{2\\pi}{\\sqrt{\\omega_0^2 - \\gamma^2}}\\), which is longer than the undamped period.</li>\n    <li>The ratio of successive amplitudes (logarithmic decrement) is constant: \\(\\ln\\left(\\frac{x_n}{x_{n+1}}\\right) = \\gamma T_d\\).</li>\n    <li>As damping increases, \\(\\omega_d\\) decreases until at critical damping (\\(\\gamma = \\omega_0\\)), \\(\\omega_d = 0\\) and oscillation ceases.</li>\n  </ul>\n  \n  <p><strong>Summary:</strong> Bracket negative = underdamped = oscillatory motion with exponentially decaying amplitude.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4a",
+    "topic": [
+      "Damped Oscillations",
+      "Equation of Motion",
+      "Period"
+    ],
+    "Question": {
+      "content": "A mass-spring system with mass = 0.2 kg and spring constant 80 N/m experiences a damping force of 4 N·s/m. Set up an equation to describe the motion of the free oscillations of the system and find the period of such oscillation.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The equation of motion is 0.2(d²x/dt²) + 4(dx/dt) + 80x = 0, or d²x/dt² + 20 dx/dt + 400x = 0. The damping ratio γ = 10 rad/s, ω₀ = 20 rad/s. Since γ < ω₀, the system is underdamped. The damped angular frequency ω_d = √(400 - 100) = √300 ≈ 17.32 rad/s, so the period T = 2π/ω_d ≈ 0.363 s."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Damped Mass-Spring System Analysis</h4>\n  \n  <p><strong>Step 1: Identify given parameters</strong></p>\n  <ul>\n    <li>Mass: \\(m = 0.2 \\; \\text{kg}\\)</li>\n    <li>Spring constant: \\(k = 80 \\; \\text{N/m}\\)</li>\n    <li>Damping force: \\(F_d = -b\\frac{dx}{dt}\\) with \\(b = 4 \\; \\text{N·s/m}\\) (the problem says \"4 N/msec\" which likely means 4 N·s/m)</li>\n  </ul>\n  \n  <p><strong>Step 2: Set up the equation of motion</strong></p>\n  <p>For a damped harmonic oscillator, Newton's second law gives:</p>\n  <p>\\(m\\frac{d^2x}{dt^2} = -kx - b\\frac{dx}{dt}\\)</p>\n  \n  <p>Substituting the values:</p>\n  <p>\\(0.2\\frac{d^2x}{dt^2} = -80x - 4\\frac{dx}{dt}\\)</p>\n  \n  <p>Rearranging to standard form:</p>\n  <p>\\(0.2\\frac{d^2x}{dt^2} + 4\\frac{dx}{dt} + 80x = 0\\)</p>\n  \n  <p>Divide through by 0.2 to simplify:</p>\n  <p style='text-align:center'>\\(\\frac{d^2x}{dt^2} + 20\\frac{dx}{dt} + 400x = 0\\)</p>\n  \n  <p><strong>Step 3: Identify damping parameters</strong></p>\n  <p>Compare with standard form: \\(\\frac{d^2x}{dt^2} + 2\\gamma\\frac{dx}{dt} + \\omega_0^2 x = 0\\)</p>\n  \n  <p>Therefore:</p>\n  <ul>\n    <li>\\(2\\gamma = 20 \\Rightarrow \\gamma = 10 \\; \\text{rad/s}\\) (damping constant)</li>\n    <li>\\(\\omega_0^2 = 400 \\Rightarrow \\omega_0 = 20 \\; \\text{rad/s}\\) (natural frequency)</li>\n  </ul>\n  \n  <p><strong>Step 4: Determine the type of damping</strong></p>\n  <p>Compare \\(\\gamma\\) and \\(\\omega_0\\):</p>\n  <p>\\(\\gamma = 10\\), \\(\\omega_0 = 20\\)</p>\n  <p>Since \\(\\gamma < \\omega_0\\), the system is <strong>underdamped</strong> (bracket negative). It will oscillate with decaying amplitude.</p>\n  \n  <p><strong>Step 5: Calculate the damped angular frequency</strong></p>\n  <p>For underdamped motion, the damped angular frequency is:</p>\n  <p style='text-align:center'>\\(\\omega_d = \\sqrt{\\omega_0^2 - \\gamma^2} = \\sqrt{400 - 100} = \\sqrt{300} = 10\\sqrt{3} \\approx 17.32 \\; \\text{rad/s}\\)</p>\n  \n  <p><strong>Step 6: Calculate the period of oscillation</strong></p>\n  <p>The period of the damped oscillation is:</p>\n  <p style='text-align:center'>\\(T_d = \\frac{2\\pi}{\\omega_d} = \\frac{2\\pi}{10\\sqrt{3}} = \\frac{\\pi}{5\\sqrt{3}} \\; \\text{s}\\)</p>\n  \n  <p>Numerical value:</p>\n  <p>\\(T_d = \\frac{3.1416}{5 \\times 1.732} = \\frac{3.1416}{8.66} \\approx 0.363 \\; \\text{s}\\)</p>\n  \n  <p><strong>Step 7: Final answer</strong></p>\n  <ul>\n    <li><strong>Equation of motion:</strong> \\(\\frac{d^2x}{dt^2} + 20\\frac{dx}{dt} + 400x = 0\\)</li>\n    <li><strong>Period of oscillation:</strong> \\(T_d \\approx 0.363 \\; \\text{s}\\)</li>\n  </ul>\n  \n  <p><strong>Note:</strong> The undamped period would be \\(T_0 = 2\\pi/\\omega_0 = 2\\pi/20 = 0.314 \\; \\text{s}\\). Damping has increased the period slightly.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4b",
+    "topic": [
+      "Forced Oscillations",
+      "Velocity",
+      "Acceleration"
+    ],
+    "Question": {
+      "content": "If the displacement of a forced oscillator is given as \\( x(t) = \\frac{-iF_0 e^{i(\\omega t - \\varphi)}}{\\omega Z_m} \\), write expressions for the velocity and acceleration of the system.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Velocity: \\( v(t) = \\frac{dx}{dt} = \\frac{F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\)\nAcceleration: \\( a(t) = \\frac{d^2x}{dt^2} = \\frac{i\\omega F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Velocity and Acceleration from Displacement</h4>\n  \n  <p><strong>Given:</strong></p>\n  <p style='text-align:center'>\\( x(t) = \\frac{-iF_0 e^{i(\\omega t - \\varphi)}}{\\omega Z_m} \\)</p>\n  \n  <p>where \\(F_0\\) is the driving force amplitude, \\(\\omega\\) is the driving frequency, \\(\\varphi\\) is the phase, and \\(Z_m\\) is the mechanical impedance.</p>\n  \n  <p><strong>Step 1: Find the velocity</strong></p>\n  <p>Velocity is the time derivative of displacement:</p>\n  <p>\\( v(t) = \\frac{dx}{dt} = \\frac{d}{dt} \\left[ \\frac{-iF_0 e^{i(\\omega t - \\varphi)}}{\\omega Z_m} \\right] \\)</p>\n  \n  <p>The factor \\( \\frac{-iF_0}{\\omega Z_m} \\) is constant in time. The derivative of \\( e^{i(\\omega t - \\varphi)} \\) with respect to time is \\( i\\omega e^{i(\\omega t - \\varphi)} \\).</p>\n  \n  <p>Therefore:</p>\n  <p>\\( v(t) = \\frac{-iF_0}{\\omega Z_m} \\cdot i\\omega e^{i(\\omega t - \\varphi)} \\)</p>\n  \n  <p>Simplify: \\( (-i) \\cdot (i) = -i^2 = -(-1) = +1 \\), and the \\(\\omega\\) cancels:</p>\n  \n  <p style='text-align:center'>\\( v(t) = \\frac{F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\)</p>\n  \n  <p><strong>Step 2: Find the acceleration</strong></p>\n  <p>Acceleration is the time derivative of velocity (or second derivative of displacement):</p>\n  \n  <p>\\( a(t) = \\frac{dv}{dt} = \\frac{d}{dt} \\left[ \\frac{F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\right] \\)</p>\n  \n  <p>The derivative of \\( e^{i(\\omega t - \\varphi)} \\) is \\( i\\omega e^{i(\\omega t - \\varphi)} \\):</p>\n  \n  <p>\\( a(t) = \\frac{F_0}{Z_m} \\cdot i\\omega e^{i(\\omega t - \\varphi)} \\)</p>\n  \n  <p style='text-align:center'>\\( a(t) = \\frac{i\\omega F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\)</p>\n  \n  <p><strong>Step 3: Alternative derivation from displacement directly</strong></p>\n  <p>We can also get acceleration by differentiating displacement twice:</p>\n  \n  <p>\\( a(t) = \\frac{d^2x}{dt^2} = \\frac{d}{dt}[v(t)] = \\frac{d}{dt} \\left[ \\frac{F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\right] = \\frac{i\\omega F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\)</p>\n  \n  <p><strong>Step 4: Physical interpretation</strong></p>\n  <ul>\n    <li>The velocity is in phase with the driving force (no \\(i\\) factor, so it's real if we take real parts).</li>\n    <li>The acceleration is 90° ahead of the velocity (factor \\(i\\) represents a phase shift of \\(\\pi/2\\)).</li>\n    <li>The displacement is 90° behind the velocity (since displacement had a factor \\(-i\\) relative to velocity).</li>\n  </ul>\n  \n  <p><strong>Step 5: Taking real parts (if needed for physical interpretation)</strong></p>\n  <p>If we want the actual physical (real) displacement, we take the real part. For example, if \\(x(t)\\) is given in complex form, the physical displacement is \\(\\text{Re}[x(t)]\\).</p>\n  \n  <p>Assuming \\(F_0, Z_m, \\omega, \\varphi\\) are real, and noting that \\(-i = e^{-i\\pi/2}\\):</p>\n  \n  <p>\\( x(t) = \\frac{F_0}{\\omega Z_m} e^{i(\\omega t - \\varphi - \\pi/2)} \\)</p>\n  \n  <p>Then the real displacement is \\( \\frac{F_0}{\\omega Z_m} \\cos(\\omega t - \\varphi - \\pi/2) = \\frac{F_0}{\\omega Z_m} \\sin(\\omega t - \\varphi) \\).</p>\n  \n  <p>Similarly, velocity real part: \\( \\frac{F_0}{Z_m} \\cos(\\omega t - \\varphi) \\)</p>\n  \n  <p>Acceleration real part: \\( -\\frac{\\omega F_0}{Z_m} \\sin(\\omega t - \\varphi) \\)</p>\n  \n  <p><strong>Final expressions (complex form):</strong></p>\n  <p>\\( v(t) = \\frac{F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\)</p>\n  <p>\\( a(t) = \\frac{i\\omega F_0 e^{i(\\omega t - \\varphi)}}{Z_m} \\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5a",
+    "topic": [
+      "Maxwell's Equations",
+      "Electromagnetism",
+      "Physics"
+    ],
+    "Question": {
+      "content": "State Maxwell's equations, their mathematical expressions and their physical implications.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Maxwell's equations in differential form: (1) ∇·E = ρ/ε₀ (Gauss's law for electricity) - electric charges produce electric fields. (2) ∇·B = 0 (Gauss's law for magnetism) - no magnetic monopoles. (3) ∇×E = -∂B/∂t (Faraday's law) - changing magnetic fields produce electric fields. (4) ∇×B = μ₀J + μ₀ε₀∂E/∂t (Ampère-Maxwell law) - currents and changing electric fields produce magnetic fields."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Maxwell's Equations</h4>\n  \n  <p>Maxwell's equations are a set of four fundamental equations that describe the behavior of electric and magnetic fields and their interactions with matter. They form the foundation of classical electromagnetism.</p>\n  \n  <table style=\"width:100%; border-collapse: collapse; margin-top:10px;\">\n    <tr style=\"background: var(--strongColor); color: white;\">\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Name</th>\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Mathematical Expression (Differential Form)</th>\n      <th style=\"padding: 8px; border: 1px solid #ddd;\">Physical Implication</th>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Gauss's Law for Electricity</strong></td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\nabla \\cdot \\vec{E} = \\frac{\\rho}{\\varepsilon_0}\\)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Electric charges produce electric fields. The flux of electric field through a closed surface is proportional to the charge enclosed.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Gauss's Law for Magnetism</strong></td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\nabla \\cdot \\vec{B} = 0\\)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">There are no magnetic monopoles. Magnetic field lines form closed loops; the flux of B through any closed surface is zero.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Faraday's Law of Induction</strong></td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\nabla \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}\\)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">A changing magnetic field produces an electric field (electromagnetic induction). This is the principle behind generators and transformers.</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Ampère-Maxwell Law</strong></td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">\\(\\nabla \\times \\vec{B} = \\mu_0\\vec{J} + \\mu_0\\varepsilon_0\\frac{\\partial \\vec{E}}{\\partial t}\\)</td>\n      <td style=\"padding: 8px; border: 1px solid #ddd;\">Magnetic fields are produced by electric currents (first term) and by changing electric fields (second term - displacement current). This unified electricity and magnetism and predicted electromagnetic waves.</td>\n    </tr>\n  </table>\n  \n  <p><strong>Integral forms (alternative representation):</strong></p>\n  <ul>\n    <li>\\(\\oint_S \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{\\text{enc}}}{\\varepsilon_0}\\)</li>\n    <li>\\(\\oint_S \\vec{B} \\cdot d\\vec{A} = 0\\)</li>\n    <li>\\(\\oint_C \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}\\)</li>\n    <li>\\(\\oint_C \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{\\text{enc}} + \\mu_0\\varepsilon_0 \\frac{d\\Phi_E}{dt}\\)</li>\n  </ul>\n  \n  <p><strong>Key implications of Maxwell's equations:</strong></p>\n  <ol>\n    <li><strong>Prediction of electromagnetic waves:</strong> The equations predict the existence of self-propagating waves of electric and magnetic fields traveling at speed \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\).</li>\n    <li><strong>Unification of electricity and magnetism:</strong> They show that electric and magnetic fields are two aspects of the same phenomenon (electromagnetism).</li>\n    <li><strong>Conservation of charge:</strong> The equations imply the continuity equation \\(\\nabla \\cdot \\vec{J} + \\frac{\\partial \\rho}{\\partial t} = 0\\).</li>\n    <li><strong>Light is an EM wave:</strong> The calculated speed matches the measured speed of light, identifying light as an electromagnetic phenomenon.</li>\n    <li><strong>Foundation of modern technology:</strong> These equations underpin all of electrical engineering, optics, radio, and telecommunications.</li>\n  </ol>\n  \n  <p><strong>In vacuum (no charges or currents):</strong></p>\n  <p>\\(\\nabla \\cdot \\vec{E} = 0\\), \\(\\nabla \\cdot \\vec{B} = 0\\), \\(\\nabla \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}\\), \\(\\nabla \\times \\vec{B} = \\mu_0\\varepsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}\\)</p>\n  <p>These lead to the wave equations for E and B.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5b",
+    "topic": [
+      "Electromagnetic Waves",
+      "Poynting Vector",
+      "Radiation Pressure"
+    ],
+    "Question": {
+      "content": "An observer is 2m from a light source whose power output is 100W. Calculate the rms values of the electric and magnetic fields and the radiation pressure at the position of the observer.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The intensity I = P/(4πr²) = 100/(4π×4) ≈ 1.99 W/m². Then E_rms = √(I/(ε₀c)) ≈ √(1.99/(8.85×10⁻¹²×3×10⁸)) ≈ 27.4 V/m. B_rms = E_rms/c ≈ 9.13×10⁻⁸ T. Radiation pressure for absorption P_rad = I/c ≈ 6.63×10⁻⁹ Pa; for reflection it's twice that."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Calculating RMS Fields and Radiation Pressure</h4>\n  \n  <p><strong>Step 1: Identify given values</strong></p>\n  <ul>\n    <li>Distance from source: \\(r = 2 \\; \\text{m}\\)</li>\n    <li>Power output: \\(P = 100 \\; \\text{W}\\)</li>\n    <li>Constants: \\(\\varepsilon_0 = 8.85 \\times 10^{-12} \\; \\text{F/m}\\), \\(\\mu_0 = 4\\pi \\times 10^{-7} \\; \\text{H/m}\\), \\(c = 3 \\times 10^8 \\; \\text{m/s}\\)</li>\n  </ul>\n  \n  <p><strong>Step 2: Calculate the intensity (power per unit area)</strong></p>\n  <p>Assuming the source radiates uniformly in all directions (isotropic), the intensity at distance r is:</p>\n  <p style='text-align:center'>\\(I = \\frac{P}{4\\pi r^2} = \\frac{100}{4\\pi (2)^2} = \\frac{100}{4\\pi \\times 4} = \\frac{100}{16\\pi} = \\frac{25}{4\\pi} \\; \\text{W/m}^2\\)</p>\n  \n  <p>Numerical value:</p>\n  <p>\\(I = \\frac{25}{4 \\times 3.1416} = \\frac{25}{12.566} \\approx 1.989 \\; \\text{W/m}^2\\)</p>\n  \n  <p><strong>Step 3: Calculate the RMS electric field</strong></p>\n  <p>For an electromagnetic wave, the intensity is related to the RMS electric field by:</p>\n  <p style='text-align:center'>\\(I = \\varepsilon_0 c E_{\\text{rms}}^2\\)</p>\n  \n  <p>Therefore:</p>\n  <p>\\(E_{\\text{rms}} = \\sqrt{\\frac{I}{\\varepsilon_0 c}}\\)</p>\n  \n  <p>Substitute values:</p>\n  <p>\\(E_{\\text{rms}} = \\sqrt{\\frac{1.989}{(8.85 \\times 10^{-12})(3 \\times 10^8)}}\\)</p>\n  \n  <p>First calculate denominator: \\(8.85 \\times 10^{-12} \\times 3 \\times 10^8 = 2.655 \\times 10^{-3}\\)</p>\n  \n  <p>\\(E_{\\text{rms}} = \\sqrt{\\frac{1.989}{2.655 \\times 10^{-3}}} = \\sqrt{749.2} \\approx 27.37 \\; \\text{V/m}\\)</p>\n  \n  <p><strong>Step 4: Calculate the RMS magnetic field</strong></p>\n  <p>For EM waves, the RMS electric and magnetic fields are related by:</p>\n  <p style='text-align:center'>\\(E_{\\text{rms}} = c B_{\\text{rms}}\\)</p>\n  \n  <p>Therefore:</p>\n  <p>\\(B_{\\text{rms}} = \\frac{E_{\\text{rms}}}{c} = \\frac{27.37}{3 \\times 10^8} \\approx 9.12 \\times 10^{-8} \\; \\text{T}\\)</p>\n  \n  <p>We can also express in tesla (T) or gauss (1 T = 10⁴ G): \\(B_{\\text{rms}} \\approx 9.12 \\times 10^{-8} \\; \\text{T} = 9.12 \\times 10^{-4} \\; \\text{G}\\).</p>\n  \n  <p><strong>Step 5: Calculate the radiation pressure</strong></p>\n  <p>Radiation pressure depends on whether the surface absorbs or reflects the radiation:</p>\n  <ul>\n    <li>For a <strong>perfectly absorbing</strong> surface: \\(P_{\\text{rad}} = \\frac{I}{c}\\)</li>\n    <li>For a <strong>perfectly reflecting</strong> surface (normal incidence): \\(P_{\\text{rad}} = \\frac{2I}{c}\\)</li>\n  </ul>\n  \n  <p>Since the problem doesn't specify, we'll calculate both or state the general expression.</p>\n  \n  <p>\\(\\frac{I}{c} = \\frac{1.989}{3 \\times 10^8} = 6.63 \\times 10^{-9} \\; \\text{Pa}\\)</p>\n  \n  <p>Therefore:</p>\n  <ul>\n    <li>Absorption: \\(P_{\\text{rad}} = 6.63 \\times 10^{-9} \\; \\text{Pa}\\)</li>\n    <li>Reflection: \\(P_{\\text{rad}} = 1.326 \\times 10^{-8} \\; \\text{Pa}\\)</li>\n  </ul>\n  \n  <p><strong>Step 6: Final answers</strong></p>\n  <ul>\n    <li><strong>RMS electric field:</strong> \\(E_{\\text{rms}} \\approx 27.4 \\; \\text{V/m}\\)</li>\n    <li><strong>RMS magnetic field:</strong> \\(B_{\\text{rms}} \\approx 9.13 \\times 10^{-8} \\; \\text{T}\\)</li>\n    <li><strong>Radiation pressure:</strong> \\(P_{\\text{rad}} \\approx 6.63 \\times 10^{-9} \\; \\text{Pa}\\) (for absorption) or \\(1.33 \\times 10^{-8} \\; \\text{Pa}\\) (for reflection)</li>\n  </ul>\n  \n  <p><strong>Note:</strong> These values are very small, which is why radiation pressure is negligible in everyday situations but important in contexts like solar sails or comet tails.</p>\n</div>"
+    }
+  }
+
+]
